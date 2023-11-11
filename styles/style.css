@@ -1,1 +1,7 @@
-/* место для вашего кода */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}/* место для вашего кода */
