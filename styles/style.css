@@ -1,3 +1,4 @@
+/*--------------------------ШАПКА САЙТА-------------------------------------*/
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -14,11 +15,10 @@
     gap: 32px;
 }
 
-
 .header__logo {
     position: relative;
-    right: 75px;
-    top: 4px;
+    right: 76px;
+    top: -1px;
 }
 
 .header__logo-img {
@@ -33,12 +33,104 @@
 
 }
 
-
 .header__address {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+/*-----------------------------------------------------------------------*/
+/*--------------------------КОНТЕНТ-------------------------------------*/
+.cover{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    background: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+}
 
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cover__title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 165px 50px 0 50px;
+    color: white;
+    font-size: 99px;
+    line-height: 100px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.aligned__text {
+    letter-spacing: 30px;
+}
+
+.algned__text__left-spacing {
+    padding-left: 30px;
+    line-height: 115px;
+}
+
+.aligned__text-center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 31px;
+    right: 29px;
+}
+
+.aligned__text__center-spacing{
+    margin-left: 30px;
+    letter-spacing: 0;
+}
+
+.aligned__text-right {
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 30px;
+    margin-right: -29px;
+}
+
+.aligned__text__center-padding {
+    padding-left: 30px;
+}
+
+.aligned__text__right-spacing {
+    padding-left: 30px;
+}
+
+.cover__description{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 135px 50px 50px 50px;
+    color: white;
+    z-index: 2;
+    gap: 80px;
+}
+
+.cover__description-text{
+    font-size: 22px;
+    font-style: normal;
+    word-spacing: 18px;
+    text-transform: uppercase;
+}
+
+.bet-button{
+    font-size: 22px;
+    color: white;
+    padding: 11px 31px;
+    border: 1px solid white;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 
 
