@@ -2,6 +2,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #e5e5e5;
-}/* место для вашего кода */
+    padding: 92px 49px 92px 51px;
+    width: 1440px;
+    margin: auto;
+
+}
+.header__menu-list {
+    display: flex;
+    font-size: 18px;
+    list-style: circle;
+    gap: 32px;
+}
+
+
+.header__logo {
+    position: relative;
+    right: 75px;
+    top: 4px;
+}
+
+.header__logo-img {
+    width: 142px;
+    height: 106px;
+}
+
+.address {
+    font-size: 18px;
+    line-height: 135%;
+    font-style: normal;
+
+}
+
+
+.header__address {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
