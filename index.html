@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <!------------------------ОСНОВНАЯ-ИНФОРМАЦИЯ-О-СТРАНИЦЕ----------------------->
 <head>
     <meta charset="UTF-8"/>
@@ -17,21 +17,21 @@
 <header class="header__container">
     <nav class="header__menu">
         <ul class="header__menu-list">
-            <li><a href="#">главная</a></li>
-            <li><a href="#">посмотреть лоты</a></li>
-            <li><a href="#">об аукционе</a></li>
+            <li class="header__link__list__no-underline"><a class="header__link" href="#">главная</a></li>
+            <li><a class="header__link-activ" href="#">посмотреть лоты</a></li>
+            <li><a class="header__link-activ" href="#">об аукционе</a></li>
         </ul>
     </nav>
-    <a class="header__logo">
+    <a class="header__logo" href="#">
         <img
                 class="header__logo-img"
                 src="./images/logo-black.svg"
                 alt="Логотип оно тебе надо"/>
     </a>
-    <address class="header__address">
+    <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265,<br/>Амстердам</p>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
     </address>
 </header>
 <!-------------------ОСНОВНОЙ БЛОК С СЕКЦИЯМИ-------------------------------->
@@ -41,12 +41,9 @@
         <!-- Секция с контентом Cover -->
         <div class="overlay">
             <h1 class="cover__title">
-                <span class="aligned__text">он<span class="algned__text__left-spacing">о</span></span>
-                <span class="aligned__text-center">теб<span class="aligned__text__center-spacing">е</span></span>
-                <span class="aligned__text-right">
-              <span class="aligned__text__right-padding">н</span>
-              <span class="aligned__text__right-spacing">адо</span>
-            </span>
+                <span class="aligned__text">о<span class="aligned__text algned__text__left-spacing">но</span></span>
+                <span class="aligned__text-center">теб<span class="aligned__text-center aligned__text__center-spacing">е</span></span>
+                <span class="aligned__text__right aligned__text__right__spacing-charactern">н<span class="aligned__text__right">aд<span class="aligned__text__right-spacing">о</span></span></span>
             </h1>
             <div class="cover__description">
                 <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
@@ -58,10 +55,10 @@
         <!-- Секция с контентом Lots -->
         <h2 class="lots__title">Лоты</h2>
         <ul class="lots__card-list">
-            <li class="lots__card__list-item">
+            <li class="lots__card__list-item ">
                 <a class="card__link" href="#">
-                    <article class="card__type-film">
-                        <div class="card__type-film">
+                    <article class="card card__type-film ">
+                        <div class="card overlay">
                             <h3 class="card__title">Фильм режиссёра, который бросил киношколу </h3>
                             <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
                                 если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
@@ -71,8 +68,8 @@
             </li>
             <li class="lots__card__list-item">
                 <a class="card__link" href="#">
-                    <article class="card__type-book">
-                        <div class="card__type-book">
+                    <article class="card card__type-book">
+                        <div class="card overlay">
                             <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного
                                 агента </h3>
                             <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
@@ -80,16 +77,15 @@
                                 рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И
                                 это всё накладывается на
                                 эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-                        </div>
+                            </div>
                     </article>
                 </a>
             </li>
             <li class="lots__card__list-item">
                 <a class="card__link" href="#">
-                    <article class="card__type-picture">
-                        <div class="card__type-picture">
-                            <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги
-                                агента </h3>
+                    <article class="card card__type-picture">
+                        <div class="card overlay">
+                            <h3 class="card__title ">Картина, которую повторит даже 5-летний сын маминой подруги </h3>
                             <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
                                 похожее на инфузорию-туфельку. Никаких полей, лесов,
                                 котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из
@@ -123,14 +119,14 @@
 <!------------------------------ПОДВАЛ----------------------------------------->
 <footer class="footer__container">
     <!-- Подвал сайта -->
-    <address class="footer__address">
+    <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265,<br/>Амстердам</p>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
     </address>
     <nav class="footer__menu">
         <ul class="footer__menu-list">
-            <li class="footer__menu__list-item"><a class="footer__menu__link-active" href="#">главная</a></li>
+            <li class="footer__menu__list-item"><a class="footer__menu-link footer__menu__link-active" href="#">главная</a></li>
             <li class="footer__menu__list-item"><a class="footer__menu-link" href="#">посмотреть лоты</a></li>
             <li class="footer__menu__list-item"><a class="footer__menu-link" href="#">об аукционе</a></li>
         </ul>

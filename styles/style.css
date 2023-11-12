@@ -6,7 +6,6 @@
     padding: 92px 49px 92px 51px;
     width: 1440px;
     margin: auto;
-
 }
 
 .header__menu-list {
@@ -16,10 +15,21 @@
     gap: 32px;
 }
 
+.header__link {
+    text-decoration: none;
+}
+
+header-link_active {
+    border-bottom: 1px solid black;
+}
+
+.header__link__list__no-underline {
+    list-style: none;
+    align-content: flex-start;
+}
+
 .header__logo {
-    position: relative;
-    right: 76px;
-    top: -1px;
+    flex: 0 0 285px;
 }
 
 .header__logo-img {
@@ -27,13 +37,15 @@
     height: 106px;
 }
 
-.header__address {
+.address {
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 18px;
     line-height: 135%;
     font-style: normal;
+    flex-wrap: wrap;
+    flex: 0 0 238px;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -59,18 +71,20 @@
     gap: 20px;
     padding: 165px 50px 0 50px;
     color: white;
-    font-size: 99px;
+    font-size: 100px;
     line-height: 100px;
     text-transform: uppercase;
     z-index: 2;
 }
+
+
 
 .aligned__text {
     letter-spacing: 30px;
 }
 
 .algned__text__left-spacing {
-    padding-left: 30px;
+    letter-spacing: 60px;
     line-height: 115px;
 }
 
@@ -78,28 +92,27 @@
     display: flex;
     justify-content: center;
     position: relative;
-    letter-spacing: 31px;
-    right: 29px;
+    letter-spacing: 30px;
 }
 
 .aligned__text__center-spacing {
-    margin-left: 30px;
-    letter-spacing: 0;
+    letter-spacing: 30px;
+    line-height: 101px;
+    flex: 0 0 148px;
 }
 
-.aligned__text-right {
+.aligned__text__right {
     display: flex;
     justify-content: flex-end;
     letter-spacing: 30px;
-    margin-right: -29px;
-}
-
-.aligned__text__center-padding {
-    padding-left: 30px;
 }
 
 .aligned__text__right-spacing {
-    padding-left: 30px;
+    letter-spacing: 0px;
+}
+
+.aligned__text__right__spacing-charactern {
+    letter-spacing: 57px;
 }
 
 .cover__description {
@@ -152,42 +165,28 @@
     list-style: none;
 }
 
-.card__type-film {
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-size: cover;
     width: 430px;
     height: 450px;
-    background-image: url("../images/card-lot-01.jpg");
     color: white;
     flex-grow: 1;
+
+}
+
+.card__type-film {
+    background-image: url("../images/card-lot-01.jpg");
 }
 
 .card__type-book {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-size: cover;
-    width: 430px;
-    height: 450px;
     background-image: url("../images/card-lot-02.jpg");
-    color: white;
-    flex-grow: 1;
 }
 
 .card__type-picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-size: cover;
-    width: 430px;
-    height: 450px;
     background-image: url("../images/card-lot-03.jpg");
-    color: white;
-    flex-grow: 1;
 }
 
 .card__link {
@@ -242,7 +241,6 @@
     width: 240px;
     height: 240px;
     align-items: center;
-
 }
 
 .about__logo-img {
@@ -252,9 +250,9 @@
 .about__text-description {
     display: grid;
     margin-left: 15px;
-    grid-column-end: 3;
-    grid-column-start: 2;
-    grid-template-rows: 240px 120px 120px;
+    grid-column: 2/2;
+    grid-row: 1/3;
+
 }
 
 .about__title {
@@ -281,19 +279,10 @@
     width: 1440px;
 }
 
-.footer__address {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 18px;
-    line-height: 135%;
-    font-style: normal;
 
-}
 /*--------------------------ПОДВАЛ-------------------------------------*/
 .footer__menu {
     position: relative;
-    left: 2px;
     font-size: 18px;
 }
 
