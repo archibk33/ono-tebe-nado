@@ -8,6 +8,7 @@
     margin: auto;
 
 }
+
 .header__menu-list {
     display: flex;
     font-size: 18px;
@@ -34,12 +35,13 @@
     line-height: 135%;
     font-style: normal;
 }
+
 /*-----------------------------------------------------------------------*/
 /*--------------------------КОНТЕНТ-------------------------------------*/
-.cover{
+.cover {
     display: flex;
     flex-direction: column;
-    margin:auto;
+    margin: auto;
     background: url("../images/cover.jpg");
     background-size: cover;
     background-position: center;
@@ -50,7 +52,7 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.cover__title{
+.cover__title {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -80,7 +82,7 @@
     right: 29px;
 }
 
-.aligned__text__center-spacing{
+.aligned__text__center-spacing {
     margin-left: 30px;
     letter-spacing: 0;
 }
@@ -100,7 +102,7 @@
     padding-left: 30px;
 }
 
-.cover__description{
+.cover__description {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -112,7 +114,7 @@
     gap: 80px;
 }
 
-.cover__description-text{
+.cover__description-text {
     font-size: 22px;
     font-style: normal;
     word-spacing: 18px;
@@ -144,7 +146,7 @@
     padding-bottom: 27px;
 }
 
-.lots__card-list{
+.lots__card-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -219,3 +221,111 @@
     font-size: 20px;
 }
 
+.about {
+    display: grid;
+    justify-items: center;
+    width: 1440px;
+    gap: 10px;
+    grid-template-rows: 480px;
+    grid-template-columns: 430px 2fr;
+    padding: 0 50px 9px 50px;
+    margin: auto;
+}
+
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    border-radius: 120px;
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    align-items: center;
+
+}
+
+.about__logo-img {
+    width: 148px;
+}
+
+.about__text-description {
+    display: grid;
+    margin-left: 15px;
+    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-template-rows: 240px 120px 120px;
+}
+
+.about__title {
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
+
+.about__text {
+    font-size: 20px;
+    padding-top: 7px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 50px 90px 50px;
+    margin: auto;
+    width: 1440px;
+}
+
+.footer__address {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 135%;
+    font-style: normal;
+
+}
+/*--------------------------ПОДВАЛ-------------------------------------*/
+.footer__menu {
+    position: relative;
+    left: 2px;
+    font-size: 18px;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 48px;
+}
+
+.footer__menu__list-item_active {
+    text-decoration: none;
+}
+
+.footer__menu__link-active {
+    text-decoration: none;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.footer__social_list-item_active {
+    text-decoration: none;
+}
