@@ -100,7 +100,7 @@
     text-transform: uppercase;
 
 }
-.aligned__text-left{
+.aligned__text-left {
     line-height: 1;
     display: flex;
     justify-content: start;
@@ -124,7 +124,7 @@
     letter-spacing: 60px;
 }
 
-.no__letter__spacing-left    {
+.no__letter__spacing-left {
     letter-spacing: 0;
 }
 
