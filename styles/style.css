@@ -27,19 +27,14 @@
 }
 
 .header__link {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .header__link-activ {
-    border-bottom: 1px solid black;
+    text-decoration: none;
 }
 
-.header__link__list__no-activ {
-    list-style: none;
-    align-content: flex-start;
-}
-
-.header__link__list__no-underline {
+.header__link__list__no-dot {
     list-style: none;
 }
 
